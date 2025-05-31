@@ -1,11 +1,4 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  border: 0;
-}
-
-.tema-switcher {
+/* .tema-switcher {
   margin-bottom: 1.5rem;
   display: flex;
   gap: 1rem;
@@ -33,4 +26,57 @@
 .tema-switcher button:active {
   transform: scale(0.98);
   background-color: #283593;
+} */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.tema-switcher {
+  margin-bottom: 2rem;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.tema-switcher button {
+  padding: 0.5rem 1.2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.25s ease-in-out;
+}
+
+/* LIGHT THEME BUTTON */
+.btn-light {
+  background-color: #f1f1f1;
+  color: #222;
+  border: 1px solid #222;
+}
+.btn-light:hover {
+  background-color: #e0e0e0;
+}
+
+/* DARK THEME BUTTON */
+.btn-dark {
+  background-color: #2e3a59;
+  color: #f1f1f1;
+  border: 1px solid #f1f1f1;
+}
+.btn-dark:hover {
+  background-color: #3f4f6b;
+}
+
+/* TERMINAL THEME BUTTON */
+.btn-terminal {
+  font-family: monospace;
+  background-color: #000;
+  color: #00ff00;
+  border: 1px solid #00ff00;
+}
+.btn-terminal:hover {
+  background-color: #111;
 }
